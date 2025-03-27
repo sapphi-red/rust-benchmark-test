@@ -1,9 +1,32 @@
 use criterion::{Criterion, criterion_group, criterion_main};
 use phf::phf_set;
 
-const DISALLOW_NEW_FOR_BUILTINS_1: [&str; 12] = [
-    "BigInt", "Boolean", "Number", "adwad", "dawgfaw", " HHAWD", "awf", "5169", "2dwqqd", "dwqf",
-    "Symbol", "String",
+const DISALLOW_NEW_FOR_BUILTINS_1: [&str; 25] = [
+    "BigInt",
+    "Boolean",
+    "Number",
+    "adwad",
+    "dawgfaw",
+    " HHAWD",
+    "awf",
+    "5169",
+    "2dwqqd",
+    "dwqf",
+    "BBCCDD",
+    "AABBWW",
+    "Q51515",
+    "__+!@!",
+    "ccaw252",
+    "2112e",
+    "QQDD",
+    "QQ",
+    "Tencent",
+    "meituan",
+    "alibaba",
+    "bytedance",
+    "mayi",
+    "Symbol",
+    "String",
 ];
 
 const DISALLOW_NEW_FOR_BUILTINS_2: phf::Set<&'static str> = phf_set! {
@@ -11,6 +34,8 @@ const DISALLOW_NEW_FOR_BUILTINS_2: phf::Set<&'static str> = phf_set! {
     "Boolean",
     "Number",
     "adwad", "dawgfaw", " HHAWD", "awf", "5169", "2dwqqd", "dwqf",
+    "BBCCDD", "AABBWW", "Q51515", "__+!@!", "ccaw252", "2112e",
+    "QQDD","QQ","Tencent","meituan","alibaba","bytedance","mayi",
     "Symbol",
     "String",
 };
