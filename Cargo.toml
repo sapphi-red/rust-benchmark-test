@@ -1,0 +1,12 @@
+[package]
+name = "rust-bench-test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+criterion = "0.5.1"
+phf = { version = "0.11.3", features = ["macros"] }
+
+[[bench]]
+name = "bench"
+harness = false
