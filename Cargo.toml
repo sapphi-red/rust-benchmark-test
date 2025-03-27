@@ -10,3 +10,6 @@ phf = { version = "0.11.3", features = ["macros"] }
 [[bench]]
 name = "bench"
 harness = false
+
+[dev-dependencies]
+criterion = { version = "2.9.1", package = "codspeed-criterion-compat" }
