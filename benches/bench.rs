@@ -30,14 +30,31 @@ const DISALLOW_NEW_FOR_BUILTINS_1: [&str; 25] = [
 ];
 
 const DISALLOW_NEW_FOR_BUILTINS_2: phf::Set<&'static str> = phf_set! {
+    "2112e",
+    "2dwqqd",
+    "5169",
+    "AABBWW",
+    "BBCCDD",
     "BigInt",
     "Boolean",
+    "HHAWD",
     "Number",
-    "adwad", "dawgfaw", "HHAWD", "awf", "5169", "2dwqqd", "dwqf",
-    "BBCCDD", "AABBWW", "Q51515", "__+!@!", "ccaw252", "2112e",
-    "QQDD","QQ","Tencent","meituan","alibaba","bytedance","mayi",
-    "Symbol",
+    "Q51515",
+    "QQ",
+    "QQDD",
     "String",
+    "Symbol",
+    "__+!@!",
+    "Tencent",
+    "adwad",
+    "alibaba",
+    "awf",
+    "bytedance",
+    "ccaw252",
+    "dawgfaw",
+    "dwqf",
+    "mayi",
+    "meituan",
 };
 
 fn phf_bad() {
@@ -45,15 +62,15 @@ fn phf_bad() {
 }
 
 fn phf_first() {
-    let _ = DISALLOW_NEW_FOR_BUILTINS_2.contains("BigInt");
+    let _ = DISALLOW_NEW_FOR_BUILTINS_2.contains("2112e");
 }
 
 fn phf_middle() {
-    let _ = DISALLOW_NEW_FOR_BUILTINS_2.contains("Q51515");
+    let _ = DISALLOW_NEW_FOR_BUILTINS_2.contains("String");
 }
 
 fn phf_last() {
-    let _ = DISALLOW_NEW_FOR_BUILTINS_2.contains("String");
+    let _ = DISALLOW_NEW_FOR_BUILTINS_2.contains("meituan");
 }
 
 fn array_bad() {
