@@ -1,7 +1,7 @@
-use criterion::{Criterion, black_box, criterion_group, criterion_main};
+use criterion::{Criterion, criterion_group, criterion_main};
 use phf::phf_set;
 
-const DISALLOW_NEW_FOR_BUILTINS_1: [&str; 1296] = [
+static DISALLOW_NEW_FOR_BUILTINS_1: [&str; 1296] = [
     "afterAll",
     "afterEach",
     "beforeAll",
@@ -1300,7 +1300,7 @@ const DISALLOW_NEW_FOR_BUILTINS_1: [&str; 1296] = [
     "xtest.each",
 ];
 
-const DISALLOW_NEW_FOR_BUILTINS_2: phf::Set<&'static str> = phf_set![
+static DISALLOW_NEW_FOR_BUILTINS_2: phf::Set<&'static str> = phf_set![
     "afterAll",
     "afterEach",
     "beforeAll",
